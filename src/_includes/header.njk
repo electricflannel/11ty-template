@@ -1,0 +1,9 @@
+<header class="bg-gray-900 text-white">
+  <nav class="container spacing">
+    {% for item in navigation.header %}
+      <a href="{{ item.link }}" class="underline {{ 'ml-16' if not loop.first }}">
+        {{ item.text -}}
+      </a>
+    {% endfor %}
+  </nav>
+</header>
