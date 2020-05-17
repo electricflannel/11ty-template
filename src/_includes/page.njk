@@ -9,11 +9,11 @@
     {% block head %}{% endblock %}
   </head>
   <body class="flex flex-col min-h-100vh">
-    {% include 'header.njk' %}
+    {% include 'layouts/header.njk' %}
     <main class="flex-grow">
-      {% block body %}{% endblock %}
+      {{ content | safe }}
     </main>
-    {% include 'footer.njk' %}
+    {% include 'layouts/footer.njk' %}
     <script src="/assets/main.bundle.js"></script>
     {% block scripts %}{% endblock %}
   </body>

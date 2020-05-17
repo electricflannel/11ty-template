@@ -1,13 +1,9 @@
 ---
-title: Index
+layout: layouts/base.njk
+eleventyNavigation:
+  title: Index
+  key: Home
+  order: 1
 ---
 
-{% extends 'page.njk' %}
-
-{% block body %}
-  <div class="container spacing">
-    <h1 class="h1">{{ title }}</h1>
-    <article data-message></article>
-    <article data-navigation></article>
-  </div>
-{% endblock %}
+<h1>Home</h1>
