@@ -1,12 +1,12 @@
 <header class="bg-black text-white p-3">
   <nav class="flex flex-row">
-    <h1 class="px-3">
+    <h1 class="text-xl mb-0 px-3 flex items-center">
       <a href="{{ '/' | url }}">{{ metadata.title }}</a>
     </h1>
     {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-    <ul class="flex flex-row">
+    <ul class="flex flex-row ">
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="px-2 underline{% if entry.url == page.url %} text-green-300{% endif %}">
+        <li class="px-2 underline flex items-center{% if entry.url == page.url %} text-green-300{% endif %}">
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}

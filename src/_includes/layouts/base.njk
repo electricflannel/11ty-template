@@ -12,7 +12,7 @@
   </head>
   <body class="flex flex-col min-h-100vh">
     {% include './header.njk' %}
-    <main class="flex-grow">
+    <main class="flex-grow {% if templateClass %}{{ templateClass }}{% endif %}">
       {{ content | safe }}
     </main>
     {% include './footer.njk' %}
