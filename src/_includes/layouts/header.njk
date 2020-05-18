@@ -6,7 +6,7 @@
     {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
     <ul class="flex flex-row ">
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="px-2 underline flex items-center{% if entry.url == page.url %} text-green-300{% endif %}">
+        <li class="px-2 underline flex items-center {% if entry.url == page.url %}text-green-300{% endif %}">
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}

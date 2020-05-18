@@ -1,3 +1,5 @@
+
+/* A wrapper class for posts */
 .post-template {
   & h1, h2, h3, h4, h5 {
     margin: 2.75rem 0 1.05rem;
@@ -5,19 +7,19 @@
   }
 
   & h1 {
-    @apply text-4xl mt-0
+    @apply text-3xl mt-0
   }
 
   & h2 {
-    @apply text-3xl
-  }
-
-  & h3 {
     @apply text-2xl
   }
 
-  & h4 {
+  & h3 {
     @apply text-xl
+  }
+
+  & h4 {
+    @apply text-lg
   }
 
   & h5 {
